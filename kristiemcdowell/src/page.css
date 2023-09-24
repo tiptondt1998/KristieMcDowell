@@ -1,0 +1,65 @@
+/* page.css */
+
+/* Styles for the navigation bar */
+nav {
+    background-color:darkorange;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style for the active navigation item */
+  nav li.active {
+    background-color: white; /* Change the background color for the active item */
+    color: black;
+  }
+  /* Add this CSS to your stylesheet or component-specific styles */
+
+.house-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+    gap: 20px; /* Adjust the gap between cards as needed */
+  }
+  
+  .house-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+.image-container{
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 50vh;
+}
+
+#kristie{
+    height: 300px;
+}
+
+#housephoto{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+    font-weight: bold;
+}
+
+body{
+    background-color: aqua;
+}
