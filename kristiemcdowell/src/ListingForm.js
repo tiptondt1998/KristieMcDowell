@@ -71,7 +71,7 @@ function ListingForm({ onAddListing }) {
             required
           />
         </div>
-        <button type="submit">Add Listing</button>
+        <button type="submit" onClick={handleSubmit}>Add Listing</button>
       </form>
     </div>
   );

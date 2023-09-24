@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './page.css'; // Import the external CSS file
 import image from "./images/Image.jpeg";
 import Listings from "./Listings";
+import Listingform from "./ListingForm";
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -27,6 +28,14 @@ function App() {
           >
             Listings
           </li>
+{/* 
+          <li
+            className={`navbar-item ${activeSection === 'listingform' ? 'active' : ''}`}
+            onClick={() => handleSectionClick('listingform')}
+          >
+            ListingForm
+          </li> */}
+
           <li
             className={`navbar-item ${activeSection === 'contact' ? 'active' : ''}`}
             onClick={() => handleSectionClick('contact')}
@@ -62,6 +71,14 @@ Thank you for considering me as your trusted partner in your real estate journey
           <Listings />
         </div>
       )}
+
+        {activeSection === 'listingform' && (
+        <div>
+          <h1>Listings Page</h1>
+          <Listingform />
+        </div>
+      )}
+
       {activeSection === 'contact' && (
         <div>
           <h1>Contact Page</h1>
